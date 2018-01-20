@@ -6,13 +6,20 @@ $(document).ready(function(){
 		activeNav();
 	});
 
-	$('#a_pianist, #a_lessen, #a_contact').click(function(){
+	$('#a_home, #a_pianist, #a_lessen, #a_contact').click(function(){
+
+		var name = $(this).attr('id');
+		var scroll = $('#' + name.replace("a_", "")).offset().top;
+		$("html, body").animate(
+			{scrollTop: scroll},
+			500,
+	);
+
 		var $this = $(this);
-		//$('#a_pianist, #a_lessen, #a_contact').not(this).removeClass('active');
 		setTimeout(function(){
 			$this.addClass('active');
 			$this.parent().siblings().children().removeClass('active');
-		}, 0);
+		}, 500);
 	});
 
 
@@ -21,9 +28,10 @@ $(document).ready(function(){
 				var scrollTop = $(window).scrollTop();
 
 				var menuItems = {
-					0: 'a_pianist',
-					1: 'a_lessen',
-					2: 'a_contact'
+					0: 'a_home',
+					1: 'a_pianist',
+					2: 'a_lessen',
+					3: 'a_contact'
 				}
 
 				var i = 0;

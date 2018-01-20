@@ -8,14 +8,14 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Playfair+Display:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karma:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/4078410715.js"></script>
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
-    <title>Hákon Bjarnason | Pianist</title>
+    <title>Hákon Bjarnason | Pianist &amp; Pianodocent</title>
   </head>
   <body>
 
-    <header class="jumbotron jumbotron-fluid">
+    <header id="home" class="jumbotron jumbotron-fluid">
       <div class="container-fluid d-flex">
         <div class="text-container">
           <h1>Hákon Bjarnason</h1>
@@ -26,13 +26,13 @@
 
       <nav id="navbar" class="container-fluid d-flex">
         <div class="left">
-          <!-- left empty to justify navbar -->
+          <a id="a_home"><i class="fa fa-home"></i></a>
         </div>
         <div class="middle">
           <ul>
-            <li><a id="a_pianist" href="#pianist">Pianist</a></li>
-            <li><a id="a_lessen" href="#lessen">Lessen</a></li>
-            <li><a id="a_contact" href="#contact">Contact</a></li>
+            <li><a id="a_pianist">Pianist</a></li>
+            <li><a id="a_lessen">Lessen</a></li>
+            <li><a id="a_contact">Contact</a></li>
             <li class=></li>
           </ul>
         </div>
@@ -43,29 +43,31 @@
 
 
     <main>
-      <section id="pianist" class="container">
-        <h1>Pianist</h1>
-
-        <p>Hákon Bjarnason werd in Reykjavík, IJsland geboren en begon op
-          negenjarige leeftijd piano te spelen. Hij studeerde bij Jónas Sen
-          and Halldór Haraldsson in IJsland en twee jaar bij Jürgen Schröder
-          en Klaus Bässler in Berlijn. in de herfst van 2010 begon Hákon zijn studie bij
-          Marcel Baudet aan het Conservatorium van Amsterdam. Hij is in zomer
-          2014 afgestudeerd.</p>
-        <div class="img-container my-4">
-          <img src="./resources/images/soloist.jpg" alt="soloist">
-        </div>
-        <p>Hákon won alle drie de leeftijdscategorieën van het EPTA-Iceland
-          piano concours in de jaren 2000, 2003 en 2009. Hij was ook één van
-          de prijswinnaars van de Jonge Soloist Concour van de IJslandse
-          Kunstacademie en het IJslandse Symfonie Orkest in 2007. Daarna
-          voerde hij Prokofievs 1e Piano Concert met het orkest in Januari
-          2008. In Oktober 2013 speelde hij samen met het IJslandse Amateur
-          Symfonie Orkest het 3de Piano Concert van Beethoven.</p>
+      <section id="pianist" class="container-fluid">
+        <div class="container">
+          <h1>Pianist</h1>
+          <p>Hákon Bjarnason werd in Reykjavík, IJsland geboren en begon op
+            negenjarige leeftijd piano te spelen. Hij studeerde bij Jónas Sen
+            and Halldór Haraldsson in IJsland en twee jaar bij Jürgen Schröder
+            en Klaus Bässler in Berlijn. in de herfst van 2010 begon Hákon zijn studie bij
+            Marcel Baudet aan het Conservatorium van Amsterdam. Hij is in zomer
+            2014 afgestudeerd.</p>
+          <div class="img-container my-4">
+            <img src="./resources/images/soloist.jpg" alt="soloist">
+          </div>
+          <p>Hákon won alle drie de leeftijdscategorieën van het EPTA-Iceland
+            piano concours in de jaren 2000, 2003 en 2009. Hij was ook één van
+            de prijswinnaars van de Jonge Soloist Concour van de IJslandse
+            Kunstacademie en het IJslandse Symfonie Orkest in 2007. Daarna
+            voerde hij Prokofievs 1e Piano Concert met het orkest in Januari
+            2008. In Oktober 2013 speelde hij samen met het IJslandse Amateur
+            Symfonie Orkest het 3de Piano Concert van Beethoven.</p>
+          </div>
       </section>
-    <div class="lessen-background container-fluid">
-      <section id="lessen" class="container">
-        <h1>Lessen</h1>
+
+      <section id="lessen" class="container-fluid">
+        <div class="container">
+          <h1>Lessen</h1>
         <img class="" src="./resources/images/profile-photo.jpg" alt="">
         <p>Bij Hákon kun je terecht voor privé pianolessen. Alle niveaus en
           leeftijden zijn welkom. Je hebt alleen een instrument nodig om
@@ -92,31 +94,32 @@
                 </ul>
               </div>
             </div>
-
+          </div>
       </section>
-    </div>
 
-      <section id="contact" class="container">
-        <h1>Contact</h1>
-        <p>Voor vragen kun je het contactformulier invullen of een e-mail naar <a href="mailto:hakon.piano@gmail.com">hakon.piano[at]gmail.com</a> sturen.</p>
-        <form id="serverless-contact-form">
-          <div>
-            <label for="name"></label>
-            <input type="text" class="form-name" name="user_name" placeholder="Naam">
-          </div>
-          <div>
-            <label for="e-mail"></label>
-            <input type="email" class="form-email" name="email" placeholder="E-mail">
-          </div>
-          <div>
-            <label for="message"></label>
-            <textarea name="message" class="form-message" rows="8" cols="50" placeholder="Vraag"></textarea>
-          </div>
-          <div class="button">
-            <button type="submit" name="button">Verzenden</button>
-            <p id="confirmation">Je bericht is gestuurd.</p>
-          </div>
-        </form>
+      <section id="contact" class="container-fluid">
+        <div class="container">
+          <h1>Contact</h1>
+          <p>Voor vragen kun je het contactformulier invullen of een e-mail naar <a href="mailto:hakon.piano@gmail.com">hakon.piano[at]gmail.com</a> sturen.</p>
+          <form id="serverless-contact-form">
+            <div>
+              <label for="name"></label>
+              <input type="text" class="form-name" name="user_name" placeholder="Naam">
+            </div>
+            <div>
+              <label for="e-mail"></label>
+              <input type="email" class="form-email" name="email" placeholder="E-mail">
+            </div>
+            <div>
+              <label for="message"></label>
+              <textarea name="message" class="form-message" rows="8" cols="50" placeholder="Vraag"></textarea>
+            </div>
+            <div class="button">
+              <button type="submit" name="button">Verzenden</button>
+              <p id="confirmation">Je bericht is gestuurd.</p>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 

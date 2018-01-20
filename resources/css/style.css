@@ -52,6 +52,11 @@ section {
   padding-bottom: 50px;
 }
 
+section.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* Header */
 
 header {
@@ -135,13 +140,16 @@ nav li {
 
 nav a {
   display: inline-block;
-  /*margin: 0 1.5rem;*/
+  margin: 0 0.5rem;
   padding: 0 1.5rem;
   color: rgb(231, 232, 231);
   height: 50px;
   line-height: 50px;
-  font-size: ;
-  font-weight: ;
+  cursor: pointer;
+}
+
+nav a:not([href]):not([tabindex]) { /* overwrite bootstrap because of no href */
+    color: rgb(231, 232, 231);
 }
 
 nav .right,
@@ -176,7 +184,7 @@ nav .right p {
 }
 
 @media only screen and (max-width: 768px) {
-  a:hover {
+  nav:hover {
     color: white;
   }
 }
@@ -185,6 +193,11 @@ nav .right p {
   nav {
     justify-content: space-around;
   }
+
+  nav a {
+
+  }
+
     nav .left,
     nav .right {
       display: none;
@@ -193,6 +206,7 @@ nav .right p {
 
 @media only screen and (max-width: 375px) {
   nav a {
+    margin: 0 0;
     padding: 0 1rem;
   }
 }
@@ -210,7 +224,7 @@ main {
 
 #pianist img {
   opacity: 0.75;
-  transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out 0.1s;
 }
 
 #pianist img:hover {
@@ -230,14 +244,10 @@ main {
 
   /* Lessen */
 
-.lessen-background {
-  background-color: rgba(131, 136, 140, 0.25);
-  padding: 0;
-}
-
 #lessen {
   overflow: auto;
   width: 100%;
+  background-color: rgba(131, 136, 140, 0.25);
 }
 
 #lessen p {
@@ -287,7 +297,11 @@ main {
   .prijsen {
     flex-flow: column;
     /*align-items: center;*/
+    text-align: center;
   }
+
+
+
   #lessen img {
     width: 260px;
     height: 260px;
@@ -347,6 +361,7 @@ button {
   color: #e7e8e7;
   border-radius: 0.5rem;
   cursor: pointer;
+  margin: 0.5rem 0;
 }
 
 /*input:-webkit-autofill {
